@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(php artisan test:*)"
+      "Bash(php artisan test:*)",
+      "Bash(php artisan:*)",
+      "Bash(APP_ENV=testing php:*)"
     ]
   }
 }

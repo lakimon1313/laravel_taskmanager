@@ -18,7 +18,8 @@ use App\Models\Task;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-uses(RefreshDatabase::class);
+// Bind to TestCase so we get the full Laravel app + RefreshDatabase for clean DB
+uses(Tests\TestCase::class, RefreshDatabase::class);
 
 // ─── RELATIONSHIPS ──────────────────────────────────────────────────
 
