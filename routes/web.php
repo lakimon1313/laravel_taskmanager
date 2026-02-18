@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 Route::middleware('cacheResponse')->group(function () {
     Route::get('/', [PageController::class, 'home'])->name('home');
+    Route::get('/about', [PageController::class, 'about'])->name('about');
+    Route::get('/features', [PageController::class, 'features'])->name('features');
+    Route::get('/pricing', [PageController::class, 'pricing'])->name('pricing');
+    Route::get('/blog', [PageController::class, 'blog'])->name('blog');
+    Route::get('/faq', [PageController::class, 'faq'])->name('faq');
+    Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 });
 
 Route::middleware('auth')->group(function () {
